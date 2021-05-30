@@ -2,19 +2,34 @@
 <html lang="vi">
 
 <head>
-    <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="css/style.css" href="NguyenVanLong/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"></script>
 </head>
+        <body style="background-color: black;">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="long.html">Nguyễn Văn Long</a>
+            <a href="duong.html">Đoàn Lê Dương</a>
+            <a href="nam.html">Đỗ Công Nam</a>
+            <a href="index.html">Trang Chủ</a>
+            <a href="quyet.html">Đinh Kiên Quyết</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
 <style style="text/css">
     .carousel-inner img {
         width: 100%;
@@ -29,29 +44,6 @@
         filter: brightness(80%);
     }
 </style>
-
-
-<body style="background-color: black;">
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="long.html">Nguyễn Văn Long</a>
-        <a href="duong.html">Đoàn Lê Dương</a>
-        <a href="nam.html">Đỗ Công Nam</a>
-        <a href="quyet.html">Đinh Kiên Quyết</a>
-        <a href="index.html">Trang Chủ</a>
-    </div>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
-    
     <div id="demo" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
             <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -155,7 +147,6 @@
         </div>
 
     </div>
-
 
 </body>
 
