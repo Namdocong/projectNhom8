@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="css/style.css" hrel="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"></script>
+</head>
+
+<style style="text/css">
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .item {
+        transition: .5s ease-in-out;
+    }
+    
+    .item:hover {
+        filter: brightness(80%);
+    }
+</style>
+
+
+<body style="background-color: black;">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="long.html">Nguyễn Văn Long</a>
+            <a href="duong.html">Đoàn Lê Dương</a>
+            <a href="nam.html">Đỗ Công Nam</a>
+            <a href="index.html">Trang Chủ</a>
+            <a href="quyet.html">Đinh Kiên Quyết</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+            <li data-target="#demo" data-slide-to="5"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/ngang 6.JPG" alt="NGUYỄN VĂN LONG" class="img-thumbnail" alt="Cinque Terre" width="1340" height="510">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="text-danger"> NGUYỄN VĂN LONG </h3>
+                    <h4 class="text-danger">Msv:B17DCDT115-Lớp:D17DTMT2</h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/ngang 1.jpg" alt="Chèo thuyền mạo hiểm" class="img-thumbnail" alt="Cinque Terre" width="1340" height="510">
+                <div class="carousel-caption">
+                    <h3>Chèo thuyền mạo hiểm</h3>
+                    <p>Chèo thuyền làm thuyền bằng cây chuối!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/ngang 5.JPG" alt="Bảo tàng thiên nhiên Việt Nam" class="img-thumbnail" alt="Cinque Terre" width="1340" height="510">
+                <div class="carousel-caption">
+                    <h3>Bảo tàng thiên nhiên Việt Nam</h3>
+                    <p>Bảo tàng thiên nhiên lớn của Việt Nam!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/ngang 4.JPG" alt="Cột cờ Hoàng thành Thăng LOng" class="img-thumbnail" alt="Cinque Terre" width="1340" height="510">
+                <div class="carousel-caption">
+                    <h3>Cột cờ Hoàng thành Thăng Long</h3>
+                    <p>Ckech in Việt Nam!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/ngang 3.JPG" alt="Biệt thự bỏ hoang" class="img-thumbnail" alt="Cinque Terre" width="1340" height="510">
+                <div class="carousel-caption">
+                    <h3>Biệt thự bỏ hoang</h3>
+                    <p>Hoang vắng không người!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/ngang 2.JPG" alt="TEAM BÊ CỖ HÀ ĐÔNG" class="img-thumbnail" alt="Cinque Terre" width="1340" height="510">
+                <div class="carousel-caption">
+                    <h3>TEAM BÊ CỖ HÀ ĐÔNG</h3>
+                    <p>Lang thang Hà Nội!</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row mt-4">
+
+            <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="img/ngang 6.JPG">
+                    <img src="img/ngang 6.JPG" class="img-thumbnail" alt="Cinque Terre" width="100%" height="100%">
+            </div>
+
+            <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="img/ngang 1.jpg">
+                    <img src="img/ngang 1.jpg" class="img-thumbnail" alt="Cinque Terre" width="100% " height="100% ">
+                </a>
+            </div>
+
+            <div class="item col-sm-6 col-md-4 mb-3 ">
+                <a href="img/ngang 5.JPG">
+                    <img src="img/ngang 5.JPG" class="img-thumbnail" alt="Cinque Terre" width="100%" height="100%">
+                </a>
+            </div>
+
+            <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="img/ngang 4.JPG">
+                    <img src="img/ngang 4.JPG" class="img-thumbnail" alt="Cinque Terre" width="100% " height="100% ">
+                </a>
+            </div>
+
+            <div class="item col-sm-6 col-md-4 mb-3 ">
+                <a href="img/ngang 3.JPG">
+                    <img src="img/ngang 3.JPG" class="img-thumbnail" alt="Cinque Terre" width="100%" height="100%">
+                </a>
+            </div>
+
+            <div class="item col-sm-6 col-md-4 mb-3">
+                <a href="img/ngang 2.JPG">
+                    <img src="img/ngang 2.JPG" class="img-thumbnail" alt="Cinque Terre" width="100% " height="100% ">
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
